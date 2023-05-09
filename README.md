@@ -1,14 +1,8 @@
-# Green Software
+# green-software-is-cool
 
-This note is based on the Linux Foundation Green Software For Practitioners course. The course is a collaboration between the Linux Foundation and the Green Software Foundation.
+A gentle summary of the [Linux Foundation Green Software For Practitioners](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/) course. The Green Software Foundation maintains a [learning portal](https://learn.greensoftware.foundation/) which has more information about the subject.
 
-Here are some quick links to the resources:
-
-* [Linux Foundation](linuxfoundation.org)
-* [Green Software Foundation](https://greensoftware.foundation/)
-* [Green Software For Practitioners (LFC131)](https://training.linuxfoundation.org/training/green-software-for-practitioners-lfc131/)
-
-## Introduction
+## 1. Introduction
 
 ### What is Green Software?
 
@@ -24,13 +18,17 @@ Here are some quick links to the resources:
 
 ### Green Software Hierarchy
 
-1. **Green Software Principles**
-2. **Geen Software Pattern**: a specific example of how to apply one or more principles in a real-world example. See [here](https://patterns.greensoftware.foundation/) for a list of software patterns provided by GSF.
-3. **Green Software Practice**: a pattern applied to a specific vendor's product and informs practitioners about how to use that product in a more sustainable way.
+1. **Green Software Principles**: core concepts in green software.
+2. **Green Software Patterns**: specific methods to apply one or more principles in real-world product that is not vendor specific.
+3. **Green Software Practices**: cases of a pattern applied to a specific vendor's product.
 
-Practices should refer to patterns that should refer to principles.
+Practices should refer to patterns and patterns should refer to principles. See Figure 1 fore clearer view of the hierarchy. Green Software Foundation also provided a full list of identified patterns, which can be found [here](https://patterns.greensoftware.foundation/).
 
-## Carbon Efficiency
+| ![Figure 1: Green Software Hierarchy](./img/fig-1-green-software-hierarchy.png) |
+| :---: |
+| Figure 1: Green Software Hierarchy |
+
+## 2. Carbon Efficiency
 
 ### What Is Carbon Efficiency?
 
@@ -56,7 +54,7 @@ Practices should refer to patterns that should refer to principles.
   * Reviewed every 5 years.
   * Every party is expected to update its progress through a Nationally Determined Contribution (NDC).
 
-## Energy Efficiency
+## 3. Energy Efficiency
 
 ### What Is Energy Efficiency?
 
@@ -87,15 +85,14 @@ Practices should refer to patterns that should refer to principles.
 
 * Green software is designed them to consume as little energy as possible; this includes both the software itself and the action of its end users.
 * Green software is mindful of the PUE.
-* Static power draw is always positive and therfore energy proportionality increases with computer utilization. See Figure 1.
+* Static power draw is always positive and therfore energy proportionality increases with computer utilization. See Figure 2.
 * Workloads should be run on as few servers as possible, at the highest utilization rate, to maximize energy efficiency.
 
-| ![figure-1](https://user-images.githubusercontent.com/85326063/231280080-eb6e7581-4682-4cbc-9be5-91422ac3f7d3.png) |
+| ![Figure 2: Power vs. Utilization](./img/fig-2-power-vs-utilization.png) |
 | :---: |
-| Figure 1: Power vs. Utilization |
+| Figure 2: Power vs. Utilization |
 
-
-## Carbon Awareness
+## 4. Carbon Awareness
 
 ### What Is Carbon Awareness?
 
@@ -162,7 +159,7 @@ To achieve this, the following techniques are used:
 
 Green software prefers demand shaping to demand shifting.
 
-## Hardware Awareness
+## 5. Hardware Awareness
 
 ### What Is Hardware Awareness?
 
@@ -180,12 +177,11 @@ Practices to increase hardware efficiency include the following:
   * Increase utilization of the device.
   * I.e. Better to use one server at 100% utilization than 5 servers at 20% utilization because of the cost of embodied carbon.
 
-> Note that:
->
-> * Hardware will always break down eventually, but supporting older hardware can extend their lifespan.
+Hardware will always break down eventually, but supporting older hardware can extend their lifespan.
+
 > * Moving operations to the cloud will not reduce your emissions, it simply provides the opportunity to do so.
 
-## Measurement
+## 6. Measurement
 
 The Greenhouse Gas Protocol (GHG Protocol) is the current standard for calculating the carbon released by any organization or individual. The Software Carbon Intensity Specification (SCI Specification) is used to measure rate of software emissions and designed to incentivize the elimination of emissions.
 
@@ -223,8 +219,6 @@ $SCI = ((E \times I) \times M) / R = C / R$
 
 $E$ = Energy consumed by a software system; $I$ = Location-based marginal carbon emissions; $M$ = Embodied emissions of a software system; $R$ = Functional unit, e.g. carbon per additional user, API-call, ML job, etc.; $C$ = Carbon emissions.
 
-> Note that:
->
 > * SCI specification does not specify software boundaries, but you should include all supporting infrastructure and systems that contribute to the software operation.
 > * SCI specification does not currently describe the functional units and you are free to pick whichever best describes how your application scales.
 > * SCI score is dependent on software boundary and the chosen functional unit > it's essential to disclose them when you present your score.
@@ -232,9 +226,9 @@ $E$ = Energy consumed by a software system; $I$ = Location-based marginal carbon
 ### Quantification Methods
 
 * **Measurement**: using counters of some form. E.g., measuring the energy consumption using a hardware device in the wall socket.
-* **Calculation** using a model of some form. E.g., measure your application's energy consumption based on the CPU utilization.
+* **Calculation**: using a model of some form. E.g., measure your application's energy consumption based on the CPU utilization.
 
-## Climate Commitments
+## 7. Climate Commitments
 
 ### Emission Offset Methods
 
@@ -252,7 +246,7 @@ Note that different neutralizaiton methods have different **durability**:
 
 * Short-term durability is up to 100 years.
 * Medium-term durability is 100 to 1,000 years.
-* Long-term durabilityis more than 1,000 years.
+* Long-term durability is more than 1,000 years.
 
 > Never releasing carbon is far better than releasing carbon and then trying to keep it out of the atmosphere for 5,000 years.
 
@@ -275,7 +269,7 @@ Note that different neutralizaiton methods have different **durability**:
   * **Powered by** means the organization is directly powered by a renewable power source.
   * **Matched by** means the organization buy enough renewable energy certificates (RECs) to cover the amount of electricity you consume (1 REC = 1kWh of clean energy).
 
-> **Power Purchase Agreement** (PPA) is another way to achieve 100% Renewable, which is an agreement to buy a certain amount of energy from a renewable plant. PPAs encourage **additionality**, which means it drives the creation of new renewable plants.
+> Power Purchase Agreement (PPA) is another way to achieve 100% Renewable, which is an agreement to buy a certain amount of energy from a renewable plant. PPAs encourage **additionality**, which means it drives the creation of new renewable plants.
 
 ### 24/7 Matched
 
@@ -283,9 +277,9 @@ Note that different neutralizaiton methods have different **durability**:
 * **24/7 Matched** means that the organization is 100% Renewable every hour of the day.
 * **Carbon-Free Energy** (CFE) is used to describle how close to 24/7 matching. Defined officially as the average percentage of carbon-free energy consumed in a particular location on an hourly basis.
 
-| ![figure-2](https://user-images.githubusercontent.com/85326063/231280081-6b0af6f5-772c-45fa-bda7-5de7b29e7a17.png) |
+| ![Figure 3: 24//7 Matched](./img/fig-3-24-7-matched.png) |
 | :---: |
-| Figure 2: 24//7 Matched |
+| Figure 3: 24//7 Matched |
 
 > Carbon awareness helps an organization meet their 24/7 matching target and increase its CFE percentage.
 

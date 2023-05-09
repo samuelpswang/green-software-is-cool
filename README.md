@@ -179,7 +179,7 @@ Practices to increase hardware efficiency include the following:
 
 Hardware will always break down eventually, but supporting older hardware can extend their lifespan.
 
-> * Moving operations to the cloud will not reduce your emissions, it simply provides the opportunity to do so.
+> Moving operations to the cloud will not reduce your emissions, it simply provides the opportunity to do so.
 
 ## 6. Measurement
 
@@ -219,9 +219,7 @@ $SCI = ((E \times I) \times M) / R = C / R$
 
 $E$ = Energy consumed by a software system; $I$ = Location-based marginal carbon emissions; $M$ = Embodied emissions of a software system; $R$ = Functional unit, e.g. carbon per additional user, API-call, ML job, etc.; $C$ = Carbon emissions.
 
-> * SCI specification does not specify software boundaries, but you should include all supporting infrastructure and systems that contribute to the software operation.
-> * SCI specification does not currently describe the functional units and you are free to pick whichever best describes how your application scales.
-> * SCI score is dependent on software boundary and the chosen functional unit > it's essential to disclose them when you present your score.
+> SCI specification does not specify software boundaries, but you should include all supporting infrastructure and systems that contribute to the software operation. It also does not currently describe the functional units and you are free to pick whichever best describes how your application scales. This means that SCI score is dependent on software boundary and the chosen functional unit, which makes it is essential for you to disclose them when you present your score.
 
 ### 6.3 Quantification Methods
 
@@ -281,7 +279,7 @@ Note that different neutralizaiton methods have different **durability**:
 | :---: |
 | Figure 3: 24//7 Matched |
 
-> Carbon awareness helps an organization meet their 24/7 matching target and increase its CFE percentage.
+Carbon awareness helps an organization meet their 24/7 matching target and increase its CFE percentage.
 
 ## Reference
 

@@ -4,7 +4,7 @@ A gentle summary of the [Linux Foundation Green Software For Practitioners](http
 
 ## 1. Introduction
 
-### What is Green Software?
+### 1.1 What is Green Software?
 
 * Green software is an emerging discipline at the intersection of climate science, software design, electricity markets, hardware, and data center design.
 * Green software is carbon-efficient software, meaning it emits the least carbon possible.
@@ -16,13 +16,13 @@ A gentle summary of the [Linux Foundation Green Software For Practitioners](http
   * **Measurement**: what you can't measure, you can't improve.
   * **Climate Commitments**: understand the exact mechanism of carbon reduction.
 
-### Green Software Hierarchy
+### 1.2 Green Software Hierarchy
 
 1. **Green Software Principles**: core concepts in green software.
 2. **Green Software Patterns**: specific methods to apply one or more principles in real-world product that is not vendor specific.
 3. **Green Software Practices**: cases of a pattern applied to a specific vendor's product.
 
-Practices should refer to patterns and patterns should refer to principles. See Figure 1 fore clearer view of the hierarchy. Green Software Foundation also provided a full list of identified patterns, which can be found [here](https://patterns.greensoftware.foundation/).
+Practices should refer to patterns and patterns should refer to principles. See Figure 1 fore clearer view of the hierarchy. The Green Software Foundation also maintains a full list of patterns, which can be found [here](https://patterns.greensoftware.foundation/).
 
 | ![Figure 1: Green Software Hierarchy](./img/fig-1-green-software-hierarchy.png) |
 | :---: |
@@ -30,7 +30,7 @@ Practices should refer to patterns and patterns should refer to principles. See 
 
 ## 2. Carbon Efficiency
 
-### What Is Carbon Efficiency?
+### 2.1 What Is Carbon Efficiency?
 
 * Carbon is often used as a broad term to refer to the impact of all types of emissions and activities on global warming.
 * CO2eq is a measurement term used to measure the impact of greenhouse gasses.
@@ -38,7 +38,7 @@ Practices should refer to patterns and patterns should refer to principles. See 
   * is minimizing the amount of carbon emitted per unit of work.
   * is about building applications that add the same value but emit less carbon.
 
-### Carbon Emissons Monitoring Pacts
+### 2.2 Carbon Emissons Monitoring Pacts
 
 * **Intergovernmental Panel on Climate Change (est. 1988)**
   * An organization which provide governments with scientific information that they can use to develop climate policies.
@@ -56,19 +56,19 @@ Practices should refer to patterns and patterns should refer to principles. See 
 
 ## 3. Energy Efficiency
 
-### What Is Energy Efficiency?
+### 3.1 What Is Energy Efficiency?
 
 * Energy is the ability to do work and it is a measure of the amount of electricity used.
 * Most electricity comes from burning fossil fuels and electricity is considered a proxy for carbon.
 * To be energy efficient, we have to use the least amount of energy possible per unit of work.
 
-### Types of Energy
+### 3.2 Types of Energy
 
 * **Clean Energy**: Doesn’t produce carbon emissions, e.g. nuclear.
 * **Green Energy**: Sources from nature, e.g. wind.
 * **Renewable Energy**: Sources will not expire, e.g. solar.
 
-### Energy Effiency Metrics
+### 3.3 Energy Effiency Metrics
 
 * **Power Usage Effectiveness (PUE)**
   * Ratio between "energy used by computer" and "energy used by cooling and other overheads supporting the compouter".
@@ -81,7 +81,7 @@ Practices should refer to patterns and patterns should refer to principles. See 
 * **Static Power Draw**
   * How much electricity is drawn when a computer is in its idle state.
 
-### Energy Efficiency Key Concepts
+### 3.4 Energy Efficiency Key Concepts
 
 * Green software is designed them to consume as little energy as possible; this includes both the software itself and the action of its end users.
 * Green software is mindful of the PUE.
@@ -94,20 +94,20 @@ Practices should refer to patterns and patterns should refer to principles. See 
 
 ## 4. Carbon Awareness
 
-### What Is Carbon Awareness?
+### 4.1 What Is Carbon Awareness?
 
 * **Carbon Intensity**: How much carbon (carbon dioxide equivalent) is emitted per kWH of electricity; the standard unit is gCO2eq/kWh.
 * Do more when more energy comes from low carbon-intense sources, e.g. solar farms.
 * Do less when more energy comes from high carbon-intense sources, e.g. coal power plants.
 
-### What Affects Carbon Intensity?
+### 4.2 What Affects Carbon Intensity?
 
 * Location: Some regions have an energy mix containing more clean energy sources than others.
 * Time: Renewable energy is largely affected by weather conditions.
 * **Dispatchability**: How easy is it to produce energy on demand. High for fossil fuels; low for renewables.
 * **Curtailment**: Some electricity is throw away when more is produced than required.
 
-### Energy Grid Behavior
+### 4.3 Energy Grid Behavior
 
 Supply always have to meet demand:
 
@@ -141,7 +141,7 @@ What happens when supply falls below demand?
 * Buy more energy from fossil fuel plants. Not preferred since...
   * Coal costse money.
 
-### Carbon Awareness Key Concepts
+### 4.4 Carbon Awareness Key Concepts
 
 1. Reducing electricity consumed can help decrease the energy's carbon intensity as the first thing to be scaled back are fossil fuels.
 2. Primary driver for the transition is economic and not sustainability targets. Best way to ensure money flows in the right direction is to make sure you use electricity with the least carbon intensity.
@@ -161,13 +161,13 @@ Green software prefers demand shaping to demand shifting.
 
 ## 5. Hardware Awareness
 
-### What Is Hardware Awareness?
+### 5.1 What Is Hardware Awareness?
 
 * **Embodied Carbon**: A.k.a. embedded carbon, is the amount of carbon emitted during the creation and disposal of a device.
 * **Amortization**: the "average" of carbon released over the expected life span of a device. E.g., building a server releases 4000 kgCO2eq and it will last four years > server emits 1000 kgCO2eq/year.
 * Hardware awarness is understanding that every device is responsible for the release of carbon over its lifetime.
 
-### Hardware Awareness Key Concepts
+### 5.2 Hardware Awareness Key Concepts
 
 Practices to increase hardware efficiency include the following:
 
@@ -185,7 +185,7 @@ Hardware will always break down eventually, but supporting older hardware can ex
 
 The Greenhouse Gas Protocol (GHG Protocol) is the current standard for calculating the carbon released by any organization or individual. The Software Carbon Intensity Specification (SCI Specification) is used to measure rate of software emissions and designed to incentivize the elimination of emissions.
 
-### Greenhouse Gas Protocol (GHG Protocol)
+### 6.1 Greenhouse Gas Protocol (GHG Protocol)
 
 Under the GHG protocol, emissions are categorized into 3 scopes:
 
@@ -202,7 +202,7 @@ For software, see the following table:
 | Hybrid Cloud  | -     | Energy (Part) | Energy (Part) + Embodied |
 | Front End     | -     | -             | Energy + Embodied        |
 
-### Software Carbon Intensity Specification (SCI Specification)
+### 6.2 Software Carbon Intensity Specification (SCI Specification)
 
 * SCI Specification calculates the rate of emissions while GHG Protocol calculates the total emissions.
 * SCI focus on elimination while GHG Protocol focus on emissions.
@@ -223,14 +223,14 @@ $E$ = Energy consumed by a software system; $I$ = Location-based marginal carbon
 > * SCI specification does not currently describe the functional units and you are free to pick whichever best describes how your application scales.
 > * SCI score is dependent on software boundary and the chosen functional unit > it's essential to disclose them when you present your score.
 
-### Quantification Methods
+### 6.3 Quantification Methods
 
 * **Measurement**: using counters of some form. E.g., measuring the energy consumption using a hardware device in the wall socket.
 * **Calculation**: using a model of some form. E.g., measure your application's energy consumption based on the CPU utilization.
 
 ## 7. Climate Commitments
 
-### Emission Offset Methods
+### 7.1 Emission Offset Methods
 
 * **Abatement** is the elimination of sources of CO2 emissions in operations and value chain so that they do not enter the atmosphere at all.
 * **Offsets** are investments in emission-reduction projects through the purchase of carbon credits on the voluntary carbon market. Voluntary carbon market is where private actors trade carbon credits that represent certified removals or reductions of greenhouse gasses. 1 carbon credit = 1 tonne of CO2.
@@ -250,12 +250,12 @@ Note that different neutralizaiton methods have different **durability**:
 
 > Never releasing carbon is far better than releasing carbon and then trying to keep it out of the atmosphere for 5,000 years.
 
-### Carbon Neutral
+### 7.2 Carbon Neutral
 
 * To achieve **carbon neutrality**, all emission must be offset through carbon reduction projects (compensations and neutralizations acceptable).
 * This includes emissions from Scope 1, Scope 2, and at least business travel from Scope 3.
 
-### Net-Zero
+### 7.3 Net-Zero
 
 * To achieve **net-zero**, emissions must be reduced according to the latest climate science and residual emissions must be balanced carbon removals (neutralizations only).
 * This includes emissions from all 3 scopes. This is significant since value chain emissions often represents the majority of emissions.
@@ -263,7 +263,7 @@ Note that different neutralizaiton methods have different **durability**:
 
 > Net-zero focus on abatement while carbon neutrality focuses on neutralizations and compensations.
 
-### 100% Renewable
+### 7.4 100% Renewable
 
 * **100% renewable** has two types:
   * **Powered by** means the organization is directly powered by a renewable power source.
@@ -271,7 +271,7 @@ Note that different neutralizaiton methods have different **durability**:
 
 > Power Purchase Agreement (PPA) is another way to achieve 100% Renewable, which is an agreement to buy a certain amount of energy from a renewable plant. PPAs encourage **additionality**, which means it drives the creation of new renewable plants.
 
-### 24/7 Matched
+### 7.5 24/7 Matched
 
 * 100% Renewable does not mean energy demand is met every hour of the day. See Figure 2.
 * **24/7 Matched** means that the organization is 100% Renewable every hour of the day.
